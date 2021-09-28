@@ -135,8 +135,32 @@ ul {
 footer {
 	height: 15vh;
 	width: 100vw;
+}
+
+.footer__chat {
+	height: 10vh;
+	width: 100vw;
 	background-color: #eee;
 	position: relative;
+}
+
+.footer__attribution {
+	height: 5vh;
+	width: 100vw;
+	background-color: black;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: white;
+	align-items: center;
+}
+
+.creator-link {
+	padding-left: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
 }
 
 .image-icon {
