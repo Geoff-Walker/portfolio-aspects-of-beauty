@@ -97,8 +97,9 @@ ul {
 .nav-link {
 	text-decoration: none;
 	list-style: none;
-	font-size: 1.5rem;
+	font-size: 3rem;
 	padding-left: 2rem;
+	font-family: 'Ruthie', cursive;
 
 	color: purple;
 }
@@ -126,12 +127,107 @@ ul {
 	width: 100vw;
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////Section__testimonials//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 .section__testimonials {
-	background-color: white;
+	background-color: rgb(249, 248, 246);
 	height: 100vh;
 	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
+.review__heading {
+	font-family: 'Ruthie', cursive;
+	font-size: 5rem;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+}
+.testimonials__card {
+	background-color: white;
+	height: 70vh;
+	width: 45vw;
+	border-radius: 30px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.speechmarks {
+	position: absolute;
+	height: 20vh;
+	width: 10vw;
+	left: 30vw;
+	top: 15vw;
+}
+
+.testimonials__text {
+	font-family: 'Rubik', sans-serif;
+	font-size: 2rem;
+	padding: 100px;
+	color: darkgray;
+	margin-top: 20vh;
+	text-align: center;
+}
+.testimonials__customer {
+	font-family: 'Ruthie', cursive;
+	font-size: 5rem;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	position: relative;
+	bottom: -3vh;
+	right: -10vw;
+}
+
+.slider__btn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
+	border: none;
+	background: rgba(255, 255, 255, 0.7);
+
+	color: rgba(128, 0, 128, 0.5);
+	border-radius: 50%;
+	height: 5.5rem;
+	width: 5.5rem;
+	font-size: 3.25rem;
+	cursor: pointer;
+	box-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+}
+
+.slider__btn:hover {
+	background-color: rgba(128, 0, 128, 0.5);
+	color: white;
+}
+
+.slider__btn--left {
+	left: 15%;
+	transform: translate(-50%, 25%);
+}
+
+.slider__btn--right {
+	right: 15%;
+	transform: translate(50%, 25%);
+}
+
+.dots {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////Footer//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer {
 	height: 15vh;
 	width: 100vw;
@@ -185,7 +281,7 @@ footer {
 	right: 4vw;
 	top: 4vh;
 	color: purple;
-	background-color: purple;
+	background-color: rgba(128, 0, 128, 0.5);
 	border-radius: 20px;
 	height: 8vh;
 	width: 10vw;
