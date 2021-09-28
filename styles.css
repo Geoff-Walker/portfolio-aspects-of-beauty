@@ -1,5 +1,5 @@
 body {
-	background-color: #eee;
+	background-color: rgb(249, 248, 246);
 	padding: none;
 	margin: none;
 	border: none;
@@ -15,40 +15,213 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 3vh;
+	padding-top: 2vh;
+}
+
+ul {
+	list-style: none;
+	margin: none;
 }
 
 .logo__main {
-	height: 7vh;
+	height: 15vh;
+}
+
+.header-clipped {
+	height: auto;
+	width: 90vw;
+	transform: translateY(-20vh);
+	animation: slide 30s ease-in-out infinite;
+}
+
+@keyframes slide {
+	0% {
+	}
+}
+
+.clip {
+	width: 100vw;
+	height: 100vh;
 }
 
 .header__img {
 	width: 100vw;
-	background-image: url(images/premises.jpg);
 	height: 80vh;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100vw;
-	filter: brightness(70%);
+	overflow: hidden;
+
+	-webkit-mask-image: url(images/clip-mask.png);
+	mask-image: url(images/clip-mask.png);
+	-webkit-mask-mode: alpha;
+	mask-mode: alpha;
+
+	-webkit-mask-size: 65vw, 60vh;
+	mask-size: 100vw, 60vh;
+
+	-webkit-mask-position: center;
+
+	-webkit-mask-repeat: no-repeat;
+	transform: translateY(-6vh);
 }
 
 .nav-link {
 	text-decoration: none;
 	list-style: none;
 	font-size: 1.5rem;
+	padding-left: 2rem;
 
 	color: purple;
 }
 
-.nav-links {
-	display: flex;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	align-content: center;
+.nav-link:hover {
+	color: darkgoldenrod;
 }
 
-ul {
-	list-style: none;
-	margin: none;
-	padding-inline-start: 0px;
+.nav-link > ul {
+	padding-left: 2rem;
+}
+
+.nav-links {
+	display: flex;
+	padding-top: 0;
+	margin-top: 0;
+	padding-bottom: 4vh;
+	align-content: center;
+	transform: translateX(-2rem);
+}
+
+.section__services--home {
+	background-color: blue;
+	height: 100vh;
+	width: 100vw;
+}
+
+.section__testimonials {
+	background-color: white;
+	height: 100vh;
+	width: 100vw;
+}
+
+footer {
+	height: 15vh;
+	width: 100vw;
+	background-color: #eee;
+	position: relative;
+}
+
+.image-icon {
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	border: 2px solid darkgoldenrod;
+	box-shadow: 0px 0px 8px black;
+	cursor: pointer;
+	margin-right: 2rem;
+}
+
+.image-icon:hover {
+	transform: scale(1.5);
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: absolute;
+	right: 4vw;
+	top: 4vh;
+	color: purple;
+	background-color: purple;
+	border-radius: 20px;
+	height: 8vh;
+	width: 10vw;
+	overflow: hidden;
+}
+
+.contact:hover {
+	right: 5vw;
+	width: 30vw;
+	background-color: darkgoldenrod;
+}
+
+.contact-us {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	font-size: 1.5rem;
+	text-justify: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+.email-address {
+	color: white;
+	font-size: 1.5rem;
+	padding-left: 20px;
+}
+.facebook {
+	position: relative;
+	left: 3vw;
+
+	cursor: pointer;
+
+	position: absolute;
+	top: 4vh;
+	height: 8vh;
+	background-color: purple;
+	border-radius: 20px;
+}
+
+.facebook:hover {
+	background-color: darkgoldenrod;
+}
+
+.facebook-link {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+.facebook-text {
+	color: white;
+	font-size: 1.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.icon-facebook {
+	width: 4rem;
+	height: 4rem;
+	padding-left: 1rem;
+}
+
+.phone {
+	position: relative;
+	left: 42vw;
+	display: flex;
+
+	position: absolute;
+	top: 4vh;
+	height: 8vh;
+	background-color: purple;
+	border-radius: 20px;
+	align-items: center;
+}
+
+.phone:hover {
+	background-color: darkgoldenrod;
+}
+
+.icon-phone {
+	width: 3rem;
+	height: 3rem;
+
+	padding-left: 2rem;
+}
+.phone-text {
+	color: white;
+	font-size: 1.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
