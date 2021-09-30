@@ -6,7 +6,7 @@ body {
 	box-sizing: border-box;
 }
 
-header {
+.main-header {
 	height: 100vh;
 	width: 100vw;
 }
@@ -57,7 +57,7 @@ ul {
 	}
 
 	70% {
-		background-image: url(images/rune-enstad-cowLgyb63c4-unsplash.jpg);
+		background-image: url(images/freestocks-YGmk9UZMdZg-unsplash.jpg);
 		transform: translateY(-8vh);
 	}
 
@@ -121,16 +121,98 @@ ul {
 	transform: translateX(-2rem);
 }
 
-.section__services--home {
-	background-color: blue;
-	height: 100vh;
-	width: 100vw;
+.nav-active {
+	color: darkslategray;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////Section__testimonials//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+//////////////////////////Section__services//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+.section__services {
+	background-color: rgb(249, 248, 246);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.section__services--image-break {
+	width: 50vw;
+	height: 7vh;
+}
+.section__services--header {
+	font-size: 5rem;
+	margin: 0;
+	margin-top: 5rem;
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+}
+
+.section__services--subheading {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	padding-left: 24vw;
+	padding-right: 24vw;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	color: darkslategrey;
+	line-height: 2.5rem;
+}
+.inbound-link {
+	text-decoration: none;
+	color: darkslategray;
+}
+
+.inbound-link:hover {
+	color: darkgoldenrod;
+}
+
+.section__services--text {
+	display: flex;
+	margin-left: 25rem;
+	margin-right: 25rem;
+	margin-top: 5rem;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategrey;
+
+	line-height: 2.5rem;
+}
+
+.section__services--para-right {
+	padding-left: 2rem;
+}
+.section__services--para-left {
+	padding-right: 2rem;
+}
+
+.btn {
+	background-color: rgba(203, 179, 138);
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.2rem;
+	border-radius: 25px;
+	height: 4rem;
+	width: 20rem;
+	border: none;
+	box-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+}
+
+.btn:hover {
+	background-color: rgb(179, 145, 85);
+	box-shadow: 1px 1px 2px rgba(169, 169, 169, .8);
+}
+
+.btn-services {
+	margin-top: 2rem;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////Section__testimonials//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .section__testimonials {
 	background-color: rgb(249, 248, 246);
 	height: 100vh;
