@@ -343,6 +343,106 @@ ul {
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////Services Page//////////////////////////////////////////////////////////////////////////////////// */
+
+.product__grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.treatment__heading {
+	margin: 0px;
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 5rem;
+}
+
+.treatment__para {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+}
+.grid__container {
+	grid-column: center-start / center-end;
+	margin: 15rem 0;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-gap: 7rem;
+	margin-top: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-bottom: 2rem;
+}
+
+.grid__div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	background-color: #eee;
+	padding: 2rem;
+	border-radius: 25px;
+}
+
+.grid-div-img {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	height: 20vh;
+	border-radius: 25px;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-div-img:hover {
+	transform: scale(1.15);
+}
+
+.grid-img {
+	width: 80%;
+}
+
+.img-7 {
+	background-color: #8cb1ab;
+}
+
+.img-12 {
+	background-color: #3f2e65;
+}
+
+.grid-heading {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3.5rem;
+	margin: 0;
+	margin-top: 1rem;
+}
+
+.grid-para {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	margin: 0;
+	padding: 2rem;
+	text-align: center;
+}
+
+.img-break-space {
+	width: 60vw;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////Footer//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer {
 	height: 15vh;
