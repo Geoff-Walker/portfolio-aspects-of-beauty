@@ -388,7 +388,7 @@ footer {
 }
 
 .image-icon:hover {
-	transform: scale(1.5);
+	transform: scale(1.6);
 }
 
 .contact {
@@ -398,27 +398,31 @@ footer {
 	position: absolute;
 	right: 8rem;
 	top: 0.6rem;
-	color: purple;
+	color: white;
 	background-color: rgba(128, 0, 128, 0.5);
 	border-radius: 20px;
 	height: 5rem;
-	width: 12rem;
+	width: 11.5rem;
 	overflow: hidden;
+	font-family: 'Rubik', sans-serif;
 }
 
 .contact:hover {
-	right: 5vw;
-	width: 30vw;
-	background-color: darkgoldenrod;
+	width: 20vw;
+	height: 40vh;
+	background-color: rgb(184, 134, 11, 0.8);
+	transform: translateY(-85%);
+	flex-direction: column;
+	padding-top: 2vh;
 }
 
 .contact-us {
-	padding-left: 20px;
+	padding-left: 10px;
 	padding-right: 20px;
 	text-decoration: none;
 	cursor: pointer;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	text-justify: center;
 	align-items: center;
 	display: flex;
@@ -428,8 +432,30 @@ footer {
 
 .email-address {
 	color: white;
-	font-size: 1.5rem;
-	padding-left: 20px;
+	font-size: 1.2rem;
+	text-justify: center;
+}
+
+.icon-phone {
+}
+
+.phone-text {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.2rem;
+}
+
+.facebook-link {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: white;
+	align-items: center;
+}
+
+.icon-facebook {
+	transform: translateX(5.5rem);
+	box-shadow: 1px 1px 3px darkslategray;
+	border-radius: 10px;
 }
 
 .hidden {
