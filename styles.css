@@ -149,6 +149,8 @@ ul {
 .section__services--image-break {
 	width: 50vw;
 	height: 7vh;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
 }
 .section__services--header {
 	font-size: 5rem;
@@ -168,6 +170,7 @@ ul {
 	padding-top: 2rem;
 	color: darkslategrey;
 	line-height: 2.5rem;
+	margin-top: 3rem;
 }
 .inbound-link {
 	text-decoration: none;
@@ -222,6 +225,7 @@ ul {
 //////////////////////////Section__testimonials//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .section__testimonials {
 	background-color: rgb(249, 248, 246);
+
 	height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -230,6 +234,7 @@ ul {
 	align-items: center;
 	position: relative;
 	overflow: hidden;
+	margin: 0;
 }
 
 .review__heading {
@@ -237,7 +242,7 @@ ul {
 	font-size: 5rem;
 	color: rgba(128, 0, 128, 0.5);
 	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
-	margin-top: 0;
+	transform: translateY(-3rem);
 }
 
 .slider {
@@ -286,7 +291,7 @@ ul {
 	color: rgba(128, 0, 128, 0.5);
 	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
 	position: absolute;
-	bottom: -1rem;
+	bottom: 0rem;
 	right: 3rem;
 }
 
@@ -324,7 +329,7 @@ ul {
 
 .dots {
 	position: absolute;
-	bottom: 3%;
+	bottom: 1%;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
@@ -473,6 +478,7 @@ ul {
 	margin: 0;
 	padding: 2rem;
 	text-align: center;
+	margin-bottom: 1rem;
 }
 
 .section__about--owner {
@@ -532,6 +538,8 @@ ul {
 	color: rgba(128, 0, 128, 0.5);
 	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
 	font-size: 3.5rem;
+	margin-top: 3.5rem;
+	margin-bottom: 3.5rem;
 }
 
 .about__grid-container {
@@ -698,6 +706,7 @@ ul {
 	color: rgba(128, 0, 128, 0.5);
 	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
 	font-size: 3.5rem;
+	margin-bottom: 2rem;
 }
 
 .contact-para {
@@ -804,6 +813,14 @@ input {
 	margin-bottom: 0.5rem;
 }
 
+textarea {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	padding: 1rem;
+	border-radius: 25px;
+}
+
 #message {
 	height: 10rem;
 }
@@ -815,7 +832,7 @@ input {
 #btn-submit {
 	padding-left: 8rem;
 	margin-left: 5rem;
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -896,6 +913,7 @@ footer {
 .contact-us {
 	padding-left: 10px;
 	padding-right: 20px;
+
 	text-decoration: none;
 	cursor: pointer;
 	color: white;
@@ -907,18 +925,25 @@ footer {
 	text-align: center;
 }
 
+.email-logo {
+	margin-top: .5rem;
+}
+
 .email-address {
 	color: white;
 	font-size: 1.2rem;
 	text-justify: center;
+	margin-top: .5rem;
 }
 
 .icon-phone {
+	margin-top: .5rem;
 }
 
 .phone-text {
 	font-family: 'Rubik', sans-serif;
 	font-size: 1.2rem;
+	margin-top: .5rem;
 }
 
 .facebook-link {
@@ -927,14 +952,64 @@ footer {
 	text-decoration: none;
 	color: white;
 	align-items: center;
+	margin-top: .5rem;
 }
 
 .icon-facebook {
 	transform: translateX(5.5rem);
 	box-shadow: 1px 1px 3px darkslategray;
 	border-radius: 10px;
+	margin-top: 1rem;
+}
+
+.icon-facebook:hover {
+	box-shadow: 0px 0px 0px transparent;
 }
 
 .hidden {
 	display: none;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////thankyou page/////////////////////////////////////////////////////////////////////////////////////////// */
+
+.section__thankyou {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.div-thankyou {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.thankyou-heading {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 6rem;
+}
+
+.thankyou-para {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	padding-top: 2rem;
+}
+
+.return-home {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 6rem;
+	text-decoration: none;
+	padding-top: 2rem;
+}
+.return-home:hover {
+	color: darkgoldenrod;
 }
