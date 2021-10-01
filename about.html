@@ -26,13 +26,105 @@
             </ul>
            
         </nav>
-
-               
         
-        
-        
-
     </header>
+    <main class="about-page">
+        <h1 class="about-heading">About Aspects of Beauty</h1>
+        <p class="about-para">A high quality independently owned salon offering a wide range of cosmetic and beauty treatments.</p>
+
+        <section class="section__about--owner">
+            <div class="div__img-owner"><img src="images/Karen-large.jpg" alt="Karen Daubney" class="img__owner"></div>
+            <div class="div__about--owner">
+                <h2 class="heading__about--owner">Karen Daubney</h2>
+                <p class="para__about--owner">
+                I have had 30 years experience in the beauty and aesthetic industry and have a CIDESCO qualification together with advanced aesthetic qualifications obtained at Middlesex Hospital and Harley St, London.<br><br>I founded the Aspect of Beauty clinic 25 years ago and have been studying and improving our range of treatments ever since at the <a href="https://skinbrands.co.uk/" target="_blank" class="inbound-link">SkinBrands</a> training centre for Advanced Aesthetic Treatments on a yearly basis.</p>
+                <button class="btn btn-services" onclick="window.location.href='treatments.html';">View Our Services</button>
+            </div>
+
+        </section>
+
+
+        <section class="section__about--premises">
+            <h1 class="about__heading">We have a range of treatment rooms optimised for delivering our various therapies.</h1>
+            <div class="about__grid-container">
+                <div class="about__grid-div" onclick="openModal();currentSlide(1)">
+                    <img src="images/aob4.jpg" alt="Beautiful Woman" class="about-grid-image about-grid-1">
+                 </div>   
+                 <div class="about__grid-div" onclick="openModal();currentSlide(2)">
+                    <img src="images/premises.jpg" alt="premises" class="about-grid-image">
+                 </div>   
+                 <div class="about__grid-div" onclick="openModal();currentSlide(3)">
+                    <img src="images/aob1.jpg" alt="treatment room" class="about-grid-image about-grid-3">
+                 </div>   
+                 <div class="about__grid-div" onclick="openModal();currentSlide(4)">
+                    <img src="images/aob3.jpg" alt="waiting area" class="about-grid-image about-grid-4">
+                 </div>   
+                 <div class="about__grid-div" onclick="openModal();currentSlide(5)">
+                    <img src="images/aob2.jpg" alt="treatment room" class="about-grid-image about-grid-5">
+                 </div>   
+                 <div class="about__grid-div" onclick="openModal();currentSlide(6)">
+                    <img src="images/aob5.jpg" alt="treatment room" class="about-grid-image about-grid-6">
+                 </div>   
+            </div>  
+
+            <button class="btn btn-services" onclick="window.location.href='treatments.html';">View Our Services</button>
+
+
+
+        </section>
+
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/aob4.jpg" style="width:100%" class="scale-change-down">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/premises.jpg" style="width:100%" class="scale-change-up">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/aob1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/aob3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/aob2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/aob5.jpg" style="width:100%" class="scale-change-down">
+      </div>
+
+          <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    </div>  
+</div>  
+
+
+
+    </main>
+
+
+
+
     <footer>
         <div class="footer__chat">
           
@@ -62,5 +154,6 @@
 
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

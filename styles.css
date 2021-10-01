@@ -1,8 +1,15 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: rgb(249, 248, 246);
-	padding: none;
-	margin: none;
-	border: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
 	box-sizing: border-box;
 }
 
@@ -439,6 +446,376 @@ ul {
 	width: 60vw;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////about page/////////////////////////////////////////////////////////////////////////////////////// */
+
+.about-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-heading {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3.5rem;
+	margin: 0;
+}
+
+.about-para {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	margin: 0;
+	padding: 2rem;
+	text-align: center;
+}
+
+.section__about--owner {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+}
+
+.div__img-owner {
+	width: 50vw;
+	height: 100%;
+	overflow: hidden;
+}
+
+.img__owner {
+	height: 130%;
+	width: 100%;
+	transform: translateY(-7rem);
+}
+
+.div__about--owner {
+	width: 50vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 7rem;
+	box-sizing: border-box;
+}
+
+.heading__about--owner {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3.5rem;
+}
+
+.para__about--owner {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	padding-right: 2rem;
+
+	line-height: 2.5rem;
+}
+
+.section__about--premises {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about__heading {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3.5rem;
+}
+
+.about__grid-container {
+	grid-column: center-start / center-end;
+
+	display: grid;
+	grid-template-columns: repeat(3, 25rem);
+	grid-template-rows: repeat(2, 18rem);
+
+	grid-gap: 3rem;
+}
+
+.about__grid-div {
+	overflow: hidden;
+	height: 15rem;
+	width: 25rem;
+}
+.about__grid-div:hover {
+	transform: scale(1.2);
+	filter: grayscale(.8);
+	transition: 1s;
+}
+
+.about-grid-image {
+	height: 100%;
+	width: 100%;
+}
+
+.about-grid-1 {
+	height: 180%;
+	transform: translateY(-4rem);
+}
+.about-grid-3 {
+	height: 140%;
+}
+
+.about-grid-4 {
+	height: 120%;
+}
+
+.about-grid-5 {
+	height: 120%;
+}
+
+.about-grid-6 {
+	height: 180%;
+	transform: translateY(-5rem);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////Lightbox/////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 2rem;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+
+	background-color: black;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	height: 90%;
+
+	max-width: 1200px;
+}
+
+.scale-change-down {
+	transform: translateY(-8rem);
+}
+
+.scale-change-up {
+	transform: translateY(4rem);
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////contact page/////////////////////////////////////////////////////////////////////////////////////////// */
+
+.section__contact {
+	width: 100vw;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-heading {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3.5rem;
+}
+
+.contact-para {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	padding-right: 10rem;
+	padding-left: 10rem;
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.map-frame {
+	border: 2px solid black;
+	width: 60vw;
+	height: 50vh;
+}
+
+.img-break-space2 {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.section-form {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+}
+
+.contact-section-form {
+	display: flex;
+	flex-direction: row;
+	width: 60vw;
+	height: 70vh;
+	justify-content: center;
+}
+
+.contact__contact-details {
+	padding-right: 10rem;
+}
+
+.contact--details-heading {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3.5rem;
+}
+.contact--details-para {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	padding-top: 2rem;
+	line-height: 2.5rem;
+}
+
+.opening-hours-heading {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3.5rem;
+	padding-top: 2rem;
+}
+
+.opening {
+	display: flex;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	line-height: 2.5rem;
+}
+
+.opening-days {
+	padding-right: 4rem;
+}
+
+.opening-hours {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-family: 'Ruthie', cursive;
+	color: rgba(128, 0, 128, 0.5);
+	text-shadow: 1px 1px 10px rgba(169, 169, 169, .8);
+	font-size: 3rem;
+}
+
+input {
+	display: flex;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	color: darkslategray;
+	height: 3rem;
+	width: 30rem;
+	border-radius: 25px;
+	padding: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+#message {
+	height: 10rem;
+}
+
+#message::-webkit-input-placeholder {
+	transform: translateY(-3.5rem);
+}
+
+#btn-submit {
+	padding-left: 8rem;
+	margin-left: 5rem;
+	margin-top: 2rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
