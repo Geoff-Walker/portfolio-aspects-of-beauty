@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Ruthie&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/Aob-favicon.ico" type="image/x-icon" >
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/assets/Aobfav.png" type="image/x-icon" >
+    <link rel="stylesheet" href="images/icofont/icofont.min.css">
+   
+    <link rel="stylesheet" href="style.css">
     <title>Aspects of Beauty - Homepage</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="header__main">
 
         <nav>
-            <img src="images/AOB-large.jpg" alt="Logo" class="logo__main">
-            
+            <div class="header__nav-mobile">
+            <img src="images/assets/AOB-large.jpg" alt="Logo" class="header-logo">
+            <img src="https://img.icons8.com/plumpy/24/000000/x.png" class="nav-mobile-close nav-mobile hidden" onclick="closeMenu()"/>
+            <img src="https://img.icons8.com/material-rounded/24/000000/menu--v1.png" class="nav-mobile-open nav-mobile" onclick="openMenu()"/>
+            </div>
+
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link nav-active">Home</a></li>
-                <li><a href="treatments.html" class="nav-link">Treatments</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link nav-active hidden">Home</a></li>
+                <li><a href="treatments.html" class="nav-link hidden">Treatments</a></li>
+                <li><a href="about.html" class="nav-link hidden">About Us</a></li>
+                <li><a href="contact.html" class="nav-link hidden">Contact</a></li>
                
                    
             
@@ -44,8 +50,8 @@
     <main>
         <section class="section__services">
             <h1 class="section__services--header">Welcome to Aspects of Beauty Online</h1>
-            <h2 class="section__services--subheading">We are extremely passionate at ensuring that the treatments we offer are as current as possible and we constantly monitor the latest research at the <a href="https://skinbrands.co.uk/" target="_blank" class="inbound-link">SkinBrands</a> training centre</h2>
-            <img src="images/scroll.png" alt="image-section-break" class="section__services--image-break">
+            <h3 class="section__services--subheading">We are extremely passionate at ensuring that the treatments we offer are as current as possible and we constantly monitor the latest research at the <a href="https://skinbrands.co.uk/" target="_blank" class="inbound-link">SkinBrands</a> training centre</h2>
+            <img src="images/assets/scroll.png" alt="image-section-break" class="section__services--image-break">
             <div class="section__services--text">
             <p class="section__services--para-left">We offer an extensive range of treatments for the face and body, which encompass medically researched, science based treatments. These offer my clients a real and viable alternative to injectables, or even surgery.</p>
             <p class="section__services--para-right">Aspects of Beauty is located in the charming and picturesque village of Nettleham, close to Lincoln. I have created a tranquil and calming atmosphere, in which I hope you will immediately relax and feel comfortable. Parking is available on site.</p>
@@ -58,18 +64,18 @@
 
             <div class="slider">
             <div class="slide slide--1">
-                <img src="images/quotation-marks.png" alt="quotation marks" class="speechmarks">
+                <img src="images/assets/quotation-marks.png" alt="quotation marks" class="speechmarks">
                 <p class="testimonials__text">Karen's gentleness and compassion puts you instantly at ease!</p>
                 <h2 class="testimonials__customer">Geoff W</h2>
             </div>
 
             <div class="slide slide--2">
-                <img src="images/quotation-marks.png" alt="quotation marks" class="speechmarks">
+                <img src="images/assets/quotation-marks.png" alt="quotation marks" class="speechmarks">
                 <p class="testimonials__text">Having a facial with Karen was such a treat! She is caring, knowledgeable and passionate. I immediately felt at ease walking into her beautiful building, which was warm, inviting and restful. She took the time to chat with me about my skin and any issues I had with it. I left feeling absolutely pampered, refreshed and glowing! I wouldn’t hesitate to recommend her.</p>
                 <h2 class="testimonials__customer">Helen W</h2>
             </div>
             <div class="slide slide--3">
-                <img src="images/quotation-marks.png" alt="quotation marks" class="speechmarks">
+                <img src="images/assets/quotation-marks.png" alt="quotation marks" class="speechmarks">
                 <p class="testimonials__text">Karen is an extremely competent and professional beautician and makes you feel completely at ease with her gentle manner in the lovely surroundings at Aspect of Beauty. I would most certainly recommend Karen. </p>
                 <h2 class="testimonials__customer">Jo M</h2>
             </div>
@@ -92,13 +98,22 @@
 
         <div class="contact">
           
-            <a href="mailto:karendaubney@hotmail.co.uk" class="contact-us"><img src="images/Karen.jpg" alt="Karen Daubney" class="image-icon">Contact Us?</a>
+            <a href="mailto:karendaubney@hotmail.co.uk" class="contact-us"><img src="images/aobimage/Karen.jpg" alt="Karen Daubney" class="image-icon">Contact Us?</a>
             
-            <img src="images/icons8-email-sign-48.png" alt="Email-logo">
+           <div class="contact-detail">
+            <i class="iconfont icofont-email:before">&#xef12;</i>  
+         
+           
             <p class="email-address">karendaubney@hotmail.co.uk</p>
-            <img src="images/Phone.png" alt="Phone-icon" class="icon-phone "><p class="phone-text ">
+            </div>
+            <div class="contact-detail">
+            <i class="iconfont icofont-phone:before">&#xefbb;</i>  
+            <p class="phone-text ">
                 Telephone: 01522 754902</p>
-                <a href="https://facebook.com/" target="_blank" class="facebook-link"><img src="images/facebook-icon.png" alt="facebook-icon" class="icon-facebook"><p class="facebook-text">Come visit our Facebook</p></a>
+                </div>  
+                <div class="contact-detail">
+                <i class="iconfont icofont-facebook:before">&#xed37;</i> <p class="facebook-text">Come visit our Facebook</p>
+                </div>
             
         </div>
         </div>

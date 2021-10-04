@@ -77,47 +77,76 @@ slider();
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////lightbox/////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Open the Modal
-function openModal() {
-	document.getElementById('myModal').style.display = 'block';
+// // Open the Modal
+// function openModal() {
+// 	document.getElementById('myModal').style.display = 'block';
+// }
+
+// // Close the Modal
+// function closeModal() {
+// 	document.getElementById('myModal').style.display = 'none';
+// }
+
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+// 	showSlides((slideIndex += n));
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+// 	showSlides((slideIndex = n));
+// }
+
+// function showSlides(n) {
+// 	var i;
+// 	var slides = document.getElementsByClassName('mySlides');
+// 	var dots = document.getElementsByClassName('demo');
+// 	var captionText = document.getElementById('caption');
+// 	if (n > slides.length) {
+// 		slideIndex = 1;
+// 	}
+// 	if (n < 1) {
+// 		slideIndex = slides.length;
+// 	}
+// 	for (i = 0; i < slides.length; i++) {
+// 		slides[i].style.display = 'none';
+// 	}
+// 	for (i = 0; i < dots.length; i++) {
+// 		dots[i].className = dots[i].className.replace(' active', '');
+// 	}
+// 	slides[slideIndex - 1].style.display = 'block';
+// 	dots[slideIndex - 1].className += ' active';
+// 	captionText.innerHTML = dots[slideIndex - 1].alt;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////Mobile Menu//////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const openMobileMenu = document.querySelector('.nav-mobile-open');
+const closeMobileMenu = document.querySelector('.nav-mobile-close');
+const navLinksMobile = document.querySelectorAll('.nav-link');
+
+console.log(openMobileMenu);
+console.log(closeMobileMenu);
+console.log(navLinksMobile);
+
+function openMenu() {
+	closeMobileMenu.classList.remove('hidden');
+	openMobileMenu.classList.add('hidden');
+	navLinksMobile.forEach(function(element) {
+		element.classList.remove('hidden');
+	});
 }
 
-// Close the Modal
-function closeModal() {
-	document.getElementById('myModal').style.display = 'none';
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-	showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-	showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName('mySlides');
-	var dots = document.getElementsByClassName('demo');
-	var captionText = document.getElementById('caption');
-	if (n > slides.length) {
-		slideIndex = 1;
-	}
-	if (n < 1) {
-		slideIndex = slides.length;
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = 'none';
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(' active', '');
-	}
-	slides[slideIndex - 1].style.display = 'block';
-	dots[slideIndex - 1].className += ' active';
-	captionText.innerHTML = dots[slideIndex - 1].alt;
+function closeMenu() {
+	closeMobileMenu.classList.add('hidden');
+	openMobileMenu.classList.remove('hidden');
+	navLinksMobile.forEach(function(element) {
+		element.classList.add('hidden');
+	});
 }

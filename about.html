@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Ruthie&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/Aob-favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="images/Aobfav.png" type="image/x-icon" >
+    <link rel="stylesheet" href="images/icofont/icofont.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>About</title>
 </head>
@@ -13,7 +14,7 @@
     <header>
 
         <nav>
-            <img src="images/AOB-large.jpg" alt="Logo" class="logo__main">
+            <img src="images/assets/AOB-large.jpg" alt="Logo" class="logo__main">
             
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -33,7 +34,7 @@
         <p class="about-para">A high quality independently owned salon offering a wide range of cosmetic and beauty treatments.</p>
 
         <section class="section__about--owner">
-            <div class="div__img-owner"><img src="images/Karen-large.jpg" alt="Karen Daubney" class="img__owner"></div>
+            <div class="div__img-owner"><img src="images/aobimage/Karen-large.jpg" alt="Karen Daubney" class="img__owner"></div>
             <div class="div__about--owner">
                 <h2 class="heading__about--owner">Karen Daubney</h2>
                 <p class="para__about--owner">
@@ -48,22 +49,22 @@
             <h1 class="about__heading">We have a range of treatment rooms optimised for delivering our various therapies.</h1>
             <div class="about__grid-container">
                 <div class="about__grid-div" onclick="openModal();currentSlide(1)">
-                    <img src="images/aob4.jpg" alt="Beautiful Woman" class="about-grid-image about-grid-1">
+                    <img src="images/aobimage/aob4.jpg" alt="Beautiful Woman" class="about-grid-image about-grid-1">
                  </div>   
                  <div class="about__grid-div" onclick="openModal();currentSlide(2)">
-                    <img src="images/premises.jpg" alt="premises" class="about-grid-image">
+                    <img src="images/aobimage/premises.jpg" alt="premises" class="about-grid-image">
                  </div>   
                  <div class="about__grid-div" onclick="openModal();currentSlide(3)">
-                    <img src="images/aob1.jpg" alt="treatment room" class="about-grid-image about-grid-3">
+                    <img src="images/aobimage/aob1.jpg" alt="treatment room" class="about-grid-image about-grid-3">
                  </div>   
                  <div class="about__grid-div" onclick="openModal();currentSlide(4)">
-                    <img src="images/aob3.jpg" alt="waiting area" class="about-grid-image about-grid-4">
+                    <img src="images/aobimage/aob3.jpg" alt="waiting area" class="about-grid-image about-grid-4">
                  </div>   
                  <div class="about__grid-div" onclick="openModal();currentSlide(5)">
-                    <img src="images/aob2.jpg" alt="treatment room" class="about-grid-image about-grid-5">
+                    <img src="images/aobimage/aob2.jpg" alt="treatment room" class="about-grid-image about-grid-5">
                  </div>   
                  <div class="about__grid-div" onclick="openModal();currentSlide(6)">
-                    <img src="images/aob5.jpg" alt="treatment room" class="about-grid-image about-grid-6">
+                    <img src="images/aobimage/aob5.jpg" alt="treatment room" class="about-grid-image about-grid-6">
                  </div>   
             </div>  
 
@@ -80,30 +81,30 @@
   
       <div class="mySlides">
         <div class="numbertext">1 / 6</div>
-        <img src="images/aob4.jpg" style="width:100%" class="scale-change-down">
+        <img src="images/aobimage/aob4.jpg" style="width:100%" class="scale-change-down">
       </div>
   
       <div class="mySlides">
         <div class="numbertext">2 / 6</div>
-        <img src="images/premises.jpg" style="width:100%" class="scale-change-up">
+        <img src="images/aobimage/premises.jpg" style="width:100%" class="scale-change-up">
       </div>
   
       <div class="mySlides">
         <div class="numbertext">3 / 6</div>
-        <img src="images/aob1.jpg" style="width:100%">
+        <img src="images/aobimage/aob1.jpg" style="width:100%">
       </div>
   
       <div class="mySlides">
         <div class="numbertext">4 / 6</div>
-        <img src="images/aob3.jpg" style="width:100%">
+        <img src="images/aobimage/aob3.jpg" style="width:100%">
       </div>
       <div class="mySlides">
         <div class="numbertext">5 / 6</div>
-        <img src="images/aob2.jpg" style="width:100%">
+        <img src="images/aobimage/aob2.jpg" style="width:100%">
       </div>
       <div class="mySlides">
         <div class="numbertext">6 / 6</div>
-        <img src="images/aob5.jpg" style="width:100%" class="scale-change-down">
+        <img src="images/aobimage/aob5.jpg" style="width:100%" class="scale-change-down">
       </div>
 
           <!-- Next/previous controls -->
@@ -126,34 +127,43 @@
 
 
     <footer>
-        <div class="footer__chat">
-          
+      <div class="footer__chat">
+        
 
+     
+
+
+      <div class="contact">
+        
+          <a href="mailto:karendaubney@hotmail.co.uk" class="contact-us"><img src="images/aobimage/Karen.jpg" alt="Karen Daubney" class="image-icon">Contact Us?</a>
+          
+         <div class="contact-detail">
+          <i class="iconfont icofont-email:before">&#xef12;</i>  
        
-
-
-        <div class="contact">
+         
+          <p class="email-address">karendaubney@hotmail.co.uk</p>
+          </div>
+          <div class="contact-detail">
+          <i class="iconfont icofont-phone:before">&#xefbb;</i>  
+          <p class="phone-text ">
+              Telephone: 01522 754902</p>
+              </div>  
+              <div class="contact-detail">
+              <i class="iconfont icofont-facebook:before">&#xed37;</i> <p class="facebook-text">Come visit our Facebook</p>
+              </div>
           
-            <a href="mailto:karendaubney@hotmail.co.uk" class="contact-us"><img src="images/Karen.jpg" alt="Karen Daubney" class="image-icon">Contact Us?</a>
-            
-            <img src="images/icons8-email-sign-48.png" alt="Email-logo">
-            <p class="email-address">karendaubney@hotmail.co.uk</p>
-            <img src="images/Phone.png" alt="Phone-icon" class="icon-phone "><p class="phone-text ">
-                Telephone: 01522 754902</p>
-                <a href="https://facebook.com/" target="_blank" class="facebook-link"><img src="images/facebook-icon.png" alt="facebook-icon" class="icon-facebook"><p class="facebook-text">Come visit our Facebook</p></a>
-            
-        </div>
-        </div>
+      </div>
+      </div>
 
-        <div class="footer__attribution">
-            
-                <p class="attribution__text">Website Created by:</p>
-                <a href="http://www.geoff-walker.io" target="_blank" class="creator-link">geoff-walker.io</a>
-            
-        </div>
+      <div class="footer__attribution">
+          
+              <p class="attribution__text">Website Created by:</p>
+              <a href="http://www.geoff-walker.io" target="_blank" class="creator-link">geoff-walker.io</a>
+          
+      </div>
 
 
-    </footer>
+  </footer>
     <script src="script.js"></script>
 </body>
 </html>

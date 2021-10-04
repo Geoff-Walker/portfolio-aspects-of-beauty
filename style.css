@@ -1,0 +1,312 @@
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Root and fixed/////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+:root {
+	--color-primary-light: rgba(128, 0, 128, 0.5);
+	--color-primary-dark: rgba(128, 0, 128, 1);
+
+	--color-secondary-light: rgba(203, 179, 138);
+	--color-secondary-dark: rgb(179, 145, 85);
+
+	--color-background-light: rgb(249, 248, 246);
+	--color-background-dark: #eee;
+
+	--color-shadow: rgba(169, 169, 169, .8);
+
+	--color-text-grey: darkgray;
+	--color-text-grey-dark: darkslategray;
+
+	--font-cursive: 'Ruthie', cursive;
+	--font-sans: 'Rubik', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(249, 248, 246);
+}
+
+h1 {
+	font-family: var(--font-cursive);
+	font-size: 5rem;
+	color: var(--color-primary-light);
+	text-shadow: 1px 1px 10px var(--color-shadow);
+}
+
+h2 {
+	font-family: var(--font-cursive);
+	font-size: 3.5rem;
+	color: var(--color-primary-light);
+	text-shadow: 1px 1px 10px var(--color-shadow);
+}
+
+h3 {
+	font-family: var(--font-sans);
+	font-size: 1.5rem;
+	color: var(--color-text-grey-dark);
+}
+
+ul {
+	text-decoration: none;
+	font-family: var(--font-cursive);
+	font-size: 2.5rem;
+	color: var(--color-primary-dark);
+	list-style: none;
+}
+
+.hidden {
+	display: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Nav////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.header__nav-mobile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: .5rem;
+}
+
+.header-logo {
+	width: 15rem;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--color-background-dark);
+	margin-top: .5rem;
+}
+.nav-link {
+	text-decoration: none;
+	justify-content: center;
+	color: var(--color-primary-dark);
+}
+
+.nav-link:hover {
+	color: darkgoldenrod;
+}
+
+.nav-active {
+	color: var(--color-text-grey-dark);
+}
+
+@media screen and (min-width: 600px) {
+	.nav-mobile {
+		display: none;
+	}
+
+	.header-logo {
+		width: 40rem;
+	}
+
+	.nav-link {
+		display: block;
+		font-size: 2.5rem;
+		padding-left: 2rem;
+	}
+
+	.nav-link:hover {
+		color: darkgoldenrod;
+	}
+
+	.nav-links {
+		flex-direction: row;
+
+		padding-bottom: 4vh;
+		justify-content: center;
+
+		transform: translateX(-2rem);
+		background-color: var(--color-background-light);
+	}
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Main page header///////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.header-clipped {
+	height: 100vh;
+	width: 90vw;
+
+	background-repeat: no-repeat;
+	background-size: 100vw 50vh;
+	animation: slide 30s ease-in-out infinite;
+	background-image: url(images/aobimage/premises.jpg);
+}
+
+@keyframes slide {
+	0% {
+		background-image: url(images/aobimage/premises.jpg);
+	}
+
+	25% {
+		background-image: url(images/Beautyimg/hanna-postova-oha7AANDiL8-unsplash.jpg);
+	}
+
+	40% {
+		background-image: url(images/Beautyimg/camille-brodard-VxAwTeiqDao-unsplash.jpg);
+	}
+
+	55% {
+		background-image: url(images/Beautyimg/charisse-kenion-xhWMi9wdQaE-unsplash.jpg);
+	}
+
+	70% {
+		background-image: url(images/Beautyimg/freestocks-YGmk9UZMdZg-unsplash.jpg);
+	}
+
+	85% {
+	}
+	100% {
+		background-image: url(images/Beautyimg/christin-hume-0MoF-Fe0w0A-unsplash.jpg);
+	}
+}
+
+.header__img {
+	width: 100vw;
+	height: 50vh;
+	overflow: hidden;
+
+	-webkit-mask-image: url(images/assets/clip-mask.png);
+	mask-image: url(images/assets/clip-mask.png);
+	-webkit-mask-mode: alpha;
+	mask-mode: alpha;
+
+	-webkit-mask-size: 85vw, 30vh;
+	mask-size: 85vw, 30vh;
+
+	-webkit-mask-position: center;
+
+	-webkit-mask-repeat: no-repeat;
+	transform: translateY(-2rem);
+}
+
+@media screen and (min-width: 1200px) {
+	.header-clipped {
+		height: 60rem;
+		width: 80rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100rem 60rem;
+		animation: slide 30s ease-in-out infinite;
+		background-image: url(images/aobimage/premises.jpg);
+	}
+
+	@keyframes slide {
+		0% {
+			background-image: url(images/aobimage/premises.jpg);
+			transform: translateY(-2rem);
+		}
+
+		25% {
+			background-image: url(images/Beautyimg/hanna-postova-oha7AANDiL8-unsplash.jpg);
+		}
+
+		40% {
+			background-image: url(images/Beautyimg/camille-brodard-VxAwTeiqDao-unsplash.jpg);
+		}
+
+		55% {
+			background-image: url(images/Beautyimg/charisse-kenion-xhWMi9wdQaE-unsplash.jpg);
+			transform: translateY(1rem);
+		}
+
+		70% {
+			background-image: url(images/Beautyimg/freestocks-YGmk9UZMdZg-unsplash.jpg);
+			transform: translateY(-8rem);
+		}
+
+		85% {
+			background-image: url(images/Beautyimg/karelys-ruiz-rYardnw9lno-unsplash.jpg);
+			transform: translateY(-10rem);
+		}
+		100% {
+			background-image: url(images/Beautyimg/christin-hume-0MoF-Fe0w0A-unsplash.jpg);
+		}
+	}
+
+	.header__img {
+		width: 80rem;
+		height: 50rem;
+		overflow: hidden;
+
+		-webkit-mask-image: url(images/assets/clip-mask.png);
+		mask-image: url(images/assets/clip-mask.png);
+		-webkit-mask-mode: alpha;
+		mask-mode: alpha;
+
+		-webkit-mask-size: 80rem 50rem;
+		mask-size: 80rem 50rem;
+
+		-webkit-mask-position: center;
+
+		-webkit-mask-repeat: no-repeat;
+		margin: 0 auto;
+	}
+}
+/* 
+@media screen and (min-width: 600px) {
+	.header-clipped {
+		height: 100vh;
+		width: 90vw;
+		transform: translateY(-20vh);
+		background-repeat: no-repeat;
+		background-size: 80vw 40vh;
+		transform: translateX(-8vw);
+		background-size: cover;
+		animation: slide 30s ease-in-out infinite;
+	}
+
+	@keyframes slide {
+		0% {
+			background-image: url(images/aobimage/premises.jpg);
+			transform: translateY(-20vh);
+		}
+
+		25% {
+			background-image: url(images/Beautyimg/hanna-postova-oha7AANDiL8-unsplash.jpg);
+			transform: translateX(-5vw);
+		}
+
+		40% {
+			background-image: url(images/Beautyimg/camille-brodard-VxAwTeiqDao-unsplash.jpg);
+			transform: translateX(-6vw);
+		}
+
+		55% {
+			background-image: url(images/Beautyimg/charisse-kenion-xhWMi9wdQaE-unsplash.jpg);
+			transform: translateY(-10vh);
+		}
+
+		70% {
+			background-image: url(images/Beautyimg/freestocks-YGmk9UZMdZg-unsplash.jpg);
+			transform: translateY(-8vh);
+		}
+
+		85% {
+			background-image: url(images/Beautyimg/karelys-ruiz-rYardnw9lno-unsplash.jpg);
+			transform: translateY(-10vh);
+		}
+		100% {
+			background-image: url(images/Beautyimg/christin-hume-0MoF-Fe0w0A-unsplash.jpg);
+			transform: translateX(2vw);
+		}
+	}
+
+	.header__img {
+		width: 100vw;
+		height: 80vh;
+
+		-webkit-mask-size: 75vw, 60vh;
+		mask-size: 75vw, 60vh;
+
+		transform: translateY(-6vh);
+	}
+} */
