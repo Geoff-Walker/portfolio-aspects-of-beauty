@@ -338,6 +338,8 @@ ul {
 	justify-content: center;
 	align-self: center;
 	text-align: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .section__services--image-break {
@@ -388,4 +390,5 @@ ul {
 
 .btn-services {
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
